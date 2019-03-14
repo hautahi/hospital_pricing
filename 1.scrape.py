@@ -54,6 +54,7 @@ for index, row in d.iterrows():
             row["url2"] = str(results[1].link)
             row["url3"] = str(results[2].link)
         print(row['url1'])
+        
         # Add dataframe
         d.iloc[index]  = row
 

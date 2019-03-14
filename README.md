@@ -1,7 +1,13 @@
 # hospital_pricing
 
 ## File Descriptions
-- `1.scrape.py` takes the hospital list `Hospital_General_Information.csv` and grabs the top 3 pages in a google search, which are then stored as additional columns in `Hospital_General_Information_url.csv`
+- `1.scrape.py` takes the hospital list `Hospital_General_Information.csv` and grabs the top 3 pages in a google search, which are then stored as additional columns in `Hospital_General_Information_url.csv`.
+
+- `2.get_files.py` scrapes all `.csv`, `.xml`, `.xls`, and `.xlsx` files from the webpage defined by the first url stored in `Hospital_General_Information_url.csv` and the webpages of all links on that first page (2-layer search). It is run from the command line by
+
+    `python 2.get_files.py start_index end_index`
+
+    where `start_index` and `end_index` are integers representing the slice in the csv file to use for searching. The output is a hospital-specific folder in the `downloaded_files` folder containing all the files found as well as a `file_url.csv` file containing the url of each scraped file.
 
 ## AWS Setup Instructions
 1. Setup instance on the AWS website
