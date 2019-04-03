@@ -1,10 +1,8 @@
-import urllib3
 from bs4 import BeautifulSoup as bs
 import requests
 import pandas as pd
 import os
 import urlparse
-from urlparse import urljoin
 import time
 import sys
 
@@ -61,7 +59,7 @@ def main():
         if soup:
             for link in soup.find_all('a'):
                 current_link = link.get('href')
-                current_link = urljoin(my_url, current_link)
+                current_link = urlparse.urljoin(my_url, current_link)
                 links.append(current_link)
         home_links = list(set(links))
     
@@ -72,7 +70,7 @@ def main():
             if soup:
                 for link in soup.find_all('a'):
                     current_link = link.get('href')
-                    current_link = urljoin(my_url, current_link)
+                    current_link = urlparse.urljoin(my_url, current_link)
                     links.append(current_link)
         links = list(set(links))        
         print(str(len(links)) + " webpages found.")
