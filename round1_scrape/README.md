@@ -1,5 +1,7 @@
 # Round 1 Scraping Code
 
+The initial scraping/crawling process is divided into several rounds. This folder contains the code and output from the first round.
+
 ## File Descriptions
 - `1.google_search.py` takes the hospital list `../Hospital_General_Information.csv` and grabs the top 3 pages in a google search, which are then stored as additional columns in `../Hospital_General_Information_url.csv`.
 
@@ -15,7 +17,7 @@
     
     where `failures.csv` is a file containing a column labeled `failures` with a list of indices of the hospitals to scrape. This file can be automatically created using the `aux_status_check.py` file described below. The output is a hospital-specific folder in the `downloaded_files` folder containing all the files found as well as a `file_url.csv` file containing the url of each scraped file.
 
-- `downloaded_files` contains folders corresponsing to each hospital in which the scraped files from that hospital is stored.
+- `downloaded_files` contains folders corresponding to each hospital in which the scraped files from that hospital is stored.
 
 There are also a number of "auxiliary" files that perform some ad-hoc tasks.
 
