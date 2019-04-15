@@ -1,1 +1,3 @@
-round2_scrape/filelocations/*.csv
+*.DS_Store
+*.ipynb
+*.swp

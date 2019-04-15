@@ -1,15 +1,19 @@
 # hospital_pricing
 
-## File Descriptions
-- `1.scrape.py` takes the hospital list `Hospital_General_Information.csv` and grabs the top 3 pages in a google search, which are then stored as additional columns in `Hospital_General_Information_url.csv`.
+This repository contains the code for the hospital price scraping project. The folder/file descriptions are as follows:
 
-- `2.get_files.py` scrapes all `.csv`, `.xml`, `.xls`, and `.xlsx` files from the webpage defined by the first url stored in `Hospital_General_Information_url.csv` and the webpages of all links on that first page (2-layer search). It is run from the command line by
+- `round1_scrape` contains code for the first round of scraping, which was conducted using the `requests` and `Google-Search-API` python packages. A detailed description of the code is provided within that folder.
 
-    `python 2.get_files.py start_index end_index`
+- `round2_scrape` contains code for the second round of scraping, which was conducted using the `scrapy` python framework. A detailed description of the code is provided within that folder.
 
-    where `start_index` and `end_index` are integers representing the slice in the csv file to use for searching. The output is a hospital-specific folder in the `downloaded_files` folder containing all the files found as well as a `file_url.csv` file containing the url of each scraped file.
+- `Hospital_General_Information.csv` is the master file of hospitals.
+
+- `Hospital_General_Information_url.csv` is identical to the above but with three columns added that correspond to the first three google search hits (which are obtained from the `1.google_search.py` file in the `round1_scrape` folder.
 
 ## AWS Setup Instructions
+
+All of the computations have so far been done on desktop computers. But I'm leaving this text here to remind myself of the various steps when/if we decide to implement on AWS.
+
 1. Setup instance on the AWS website
 2. Login to AWS instance via: `ssh -i amazonkey.pem ec2-user@instance-address.amazonaws.com`
 3. Setup AWS instance with: `sudo yum install python git tmux pip`.
