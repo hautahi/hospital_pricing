@@ -6,6 +6,8 @@ This repository contains the code for the hospital price scraping project. The f
 
 - `round2_scrape` contains code for the second round of scraping, which was conducted using the `scrapy` python framework. A detailed description of the code is provided within that folder.
 
+- `analysis` contains code that begins to analyze the downloaded files.
+
 - `Hospital_General_Information.csv` is the master file of hospitals.
 
 - `Hospital_General_Information_url.csv` is identical to the above but with three columns added that correspond to the first three google search hits (which are obtained from the `1.google_search.py` file in the `round1_scrape` folder.
