@@ -17,7 +17,7 @@ The initial scraping/crawling process is divided into several rounds. This folde
     
     where `failures.csv` is a file containing a column labeled `failures` with a list of indices of the hospitals to scrape. This file can be automatically created using the `aux_status_check.py` file described below. The output is a hospital-specific folder in the `downloaded_files` folder containing all the files found as well as a `file_url.csv` file containing the url of each scraped file.
 
-- `downloaded_files` contains folders corresponding to each hospital in which the scraped files from that hospital is stored.
+- `downloaded_files` contains folders corresponding to each hospital in which the scraped files from that hospital is stored. There are too many files to upload here, but they can be downloaded from [this dropbox link](https://www.dropbox.com/sh/ksmp1am98y8sc6t/AAA0APzPZGWx8XfAmW0Kjcw3a?dl=0).
 
 There are also a number of "auxiliary" files that perform some ad-hoc tasks.
 
