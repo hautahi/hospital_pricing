@@ -6,7 +6,7 @@ import pandas as pd
 import os
 import collections
 
-# Set locations of round 1 and 2 downloads
+# Set locations of round 1-3 downloads
 round1 = "../round1_scrape/downloaded_files/"
 round2 = "./file_locations/"
 
