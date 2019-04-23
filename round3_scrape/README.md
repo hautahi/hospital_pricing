@@ -9,6 +9,6 @@ The initial scraping/crawling process is divided into several rounds. This folde
 
 - `2.get_filelocations.py` calls the spider defined in `./scrapy_price/spiders/search_spider.py` to scrape the url location of csv/excel files 1 layer deep of the websites defined in the hospital-specific csv files in the `urls` folder. It saves the location into a hospital-specific csv file in `file_locations`.
 
-- `urls` contains files corresponding to each hospital of the top google hits from the search run by `1.google_search.py`.
+- `urls` contains files corresponding to each hospital of the top google hits from the search run by `1.google_search.py`. The full folder can be downloaded from [here](https://www.dropbox.com/sh/msxmyhr7tcr0pmu/AAAm1q0RE5ZrCo68T_QdoOnwa?dl=0).
 
-- `file_locations` contains files corresponding to each hospital in which the url location of the found csv/excel file is stored.
+- `file_locations` contains files corresponding to each hospital in which the url location of the found csv/excel file is stored. The full folder can be downloaded from [here](https://www.dropbox.com/sh/v7tq3p7x219f1xa/AABzqU7Z9TXpdSdNPqojpMhYa?dl=0).
