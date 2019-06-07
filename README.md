@@ -6,11 +6,16 @@ This repository contains the code for the hospital price scraping project. The f
 
 - `round2_scrape` contains code for the second round of scraping, which was conducted using the `scrapy` python framework. A detailed description of the code is provided within that folder.
 
+- `round3_scrape` contains code for the third round of scraping, in which url's were found by including various keywords in a google search and doing a 1-layer scrape of the top google hits. A detailed description of the code is provided within that folder.
+
+
 - `analysis` contains code that begins to analyze the downloaded files.
 
 - `Hospital_General_Information.csv` is the master file of hospitals.
 
 - `Hospital_General_Information_url.csv` is identical to the above but with three columns added that correspond to the first three google search hits (which are obtained from the `1.google_search.py` file in the `round1_scrape` folder.
+
+- `consolidated_scraped_files` contains folders corresponding to each hospital in which the scraped files from that hospital is stored. The files are the combined attempts of the 3 rounds. There are too many files to upload here, but they can be downloaded from [this dropbox link](https://www.dropbox.com/sh/7wdr68z6em6ga30/AAAnr4mmRDlSJw-AD-9OhwBGa?dl=0).
 
 ## AWS Setup Instructions
 
